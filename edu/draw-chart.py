@@ -4,8 +4,9 @@ from os.path import normpath, join, dirname
 
 import matplotlib.pyplot as plt
 
+data1 = 'data.csv'
 appdir = dirname(os.getcwd())
-source = normpath(join(appdir, 'data/data.csv'))
+source = normpath(join(appdir, 'data/' + data1))
 target = normpath(join(appdir, 'data/example01.png'))
 
 y = []
